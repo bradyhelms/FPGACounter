@@ -20,3 +20,5 @@ There are several key areas that could be improved upon in a more in-depth proje
 
 This project could very easily be converted to an automatic counter. A switch or toggle button could be used to begin a loop that will increment the counter variable. This would lend itself very well to creating a stopwatch or timer display. The program could also find applications in an industrial setting, where a control signal could be incremented and decremented at will and displayed on a seven segment display.
 
+## Image of the counter displaying 255 in hex:
+![PXL_20240723_002158039](https://github.com/user-attachments/assets/7eaeea4a-4c5c-4a9c-acd0-3bdedeab1053)
