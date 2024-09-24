@@ -5,6 +5,11 @@ The main code can be found in `SevSegCounter.vhd`.
 
 The constraints file is appropriately labeled. 
 
+## Operation
+The dip switches control the output format. The rightmost switch converts to decimal, and the second from the right selects HEX. The default format is binary. 
+
+The right button (BTN0) reset the counter back to 0, moving left, we have increase (BTN1) and decrease (BTN2). If the value stored in the counter is not able to be displayed in the given format, it will display '--'. 
+
 
 Several issues were presented during the development of this FPGA application. They will be cataloged here in the order in which they were encountered. In the initial stages of the project, I developed a simple BCD 7-segment display counter of a single digit. At this point, when pressing a button to increment or decrement, the value would jump several places ahead. I determined this was due to switch bouncing. The buttons were debounced using a very simple sampling technique utilizing a cascading flip-flop circuit. At each rising edge of the clock, the input was sampled. Only after two successful sequential logic-level high inputs and a third logic-level low input, will the actual be processed and used in the counter logic.
 
